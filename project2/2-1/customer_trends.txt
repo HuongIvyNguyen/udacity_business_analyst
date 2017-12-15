@@ -1,0 +1,43 @@
+Which county has the largest number of customers?
+select Country, count(*) as number_customers from Customers group by Country order by number_customers desc;
+
+Who are the customers in the USA and how many orders each customer has purchased?
+select Orders.CustomerId, count(*) as num_orders  from Orders join (select CustomerId, CompanyName Country from Customers where Country='USA') as USAcustomer on USAcustomer.CustomerId = Orders.CustomerID group by Orders.CustomerID order by num_orders desc ;
+
+Which are the top 10 companies having the largest number of orders?
+select Orders.CustomerId, CompanyName, Country, count(*) as num_orders  from Orders join (select CustomerId, CompanyName, Country  from Customers) as newcustomers on newcustomers.CustomerId = Orders.CustomerID  group by Orders.CustomerID order by num_orders desc limit 10 ;
+
+Which are the top 10 companies having the largest number of orders above the average unit price?
+select Customers.CompanyName as CompanyName, 
+sum_order from Customers join
+(select Orders.CustomerID as CustomerId,
+count(Orders.OrderId) as sum_order
+from Orders join
+(select OrderId from OrderDetails,
+(select avg(UnitPrice) as average from OrderDetails) 
+where OrderDetails.UnitPrice > average) as above_avg
+on Orders.OrderId = above_avg.OrderId
+group by CustomerId) as new_above_avg
+on Customers.CustomerId=new_above_avg.CustomerId
+order by sum_order desc
+limit 10;
+
+Disbitribution of Product Category of the Company with the largest number of orders purchased?
+select Categories.CategoryName as CategoryName,
+count(*) as sum_category
+from Products join Categories on 
+Products.CategoryID=Categories.CategoryID join
+(select topOrders.CustomerId as CustomerId,
+OrderDetails.OrderId as OrderId, 
+OrderDetails.ProductId as ProductId
+from OrderDetails join 
+(select * from Orders join
+(select CustomerId 
+from Customers 
+where Customers.CompanyName='Save-a-lot Markets') 
+as topcustomer
+on Orders.CustomerID = topcustomer.CustomerId) as topOrders
+on OrderDetails.OrderID = topOrders.OrderId) as save_alot
+on Products.ProductID = save_alot.ProductId
+group by CategoryName
+order by sum_category desc;

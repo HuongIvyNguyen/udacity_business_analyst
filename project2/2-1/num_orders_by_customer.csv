@@ -1,0 +1,90 @@
+Orders.CustomerId,CompanyName,Country,num_orders
+SAVEA,Save-a-lot Markets,USA,31
+ERNSH,Ernst Handel,Austria,30
+QUICK,QUICK-Stop,Germany,28
+FOLKO,Folk och f� HB,Sweden,19
+HUNGO,Hungry Owl All-Night Grocers,Ireland,19
+BERGS,Berglunds snabbk�p,Sweden,18
+HILAA,HILARION-Abastos,Venezuela,18
+RATTC,Rattlesnake Canyon Grocery,USA,18
+BONAP,Bon app',France,17
+FRANK,Frankenversand,Germany,15
+LEHMS,Lehmanns Marktstand,Germany,15
+WARTH,Wartian Herkku,Finland,15
+BOTTM,Bottom-Dollar Markets,Canada,14
+HANAR,Hanari Carnes,Brazil,14
+KOENE,K�niglich Essen,Germany,14
+LAMAI,La maison d'Asie,France,14
+LILAS,LILA-Supermercado,Venezuela,14
+WHITC,White Clover Markets,USA,14
+AROUT,Around the Horn,UK,13
+MEREP,M�re Paillarde,Canada,13
+QUEEN,Queen Cozinha,Brazil,13
+LINOD,LINO-Delicateses,Venezuela,12
+REGGC,Reggiani Caseifici,Italy,12
+SUPRD,Supr�mes d�lices,Belgium,12
+BLONP,Blondesddsl p�re et fils,France,11
+GREAL,Great Lakes Food Market,USA,11
+RICAR,Ricardo Adocicados,Brazil,11
+VAFFE,Vaffeljernet,Denmark,11
+BSBEV,B's Beverages,UK,10
+GODOS,Godos Cocina T�pica,Spain,10
+ISLAT,Island Trading,UK,10
+MAGAA,Magazzini Alimentari Riuniti,Italy,10
+OLDWO,Old World Delicatessen,USA,10
+OTTIK,Ottilies K�seladen,Germany,10
+PICCO,Piccolo und mehr,Austria,10
+RICSU,Richter Supermarkt,Switzerland,10
+TORTU,Tortuga Restaurante,Mexico,10
+VICTE,Victuailles en stock,France,10
+WANDK,Die Wandernde Kuh,Germany,10
+GOURL,Gourmet Lanchonetes,Brazil,9
+QUEDE,Que Del�cia,Brazil,9
+SEVES,Seven Seas Imports,UK,9
+SPLIR,Split Rail Beer & Ale,USA,9
+WELLI,Wellington Importadora,Brazil,9
+CHOPS,Chop-suey Chinese,Switzerland,8
+EASTC,Eastern Connection,UK,8
+FURIB,Furia Bacalhau e Frutos do Mar,Portugal,8
+LONEP,Lonesome Pine Restaurant,USA,8
+ANTON,Antonio Moreno Taquer�a,Mexico,7
+BLAUS,Blauer See Delikatessen,Germany,7
+FAMIA,Familia Arquibaldo,Brazil,7
+MAISD,Maison Dewey,Belgium,7
+SIMOB,Simons bistro,Denmark,7
+WILMK,Wilman Kala,Finland,7
+WOLZA,Wolski  Zajazd,Poland,7
+ALFKI,Alfreds Futterkiste,Germany,6
+CACTU,Cactus Comidas para llevar,Argentina,6
+DRACD,Drachenblut Delikatessen,Germany,6
+FRANS,Franchi S.p.A.,Italy,6
+PERIC,Pericles Comidas cl�sicas,Mexico,6
+SANTG,Sant� Gourmet,Norway,6
+TOMSP,Toms Spezialit�ten,Germany,6
+TRADH,Tradi��o Hipermercados,Brazil,6
+COMMI,Com�rcio Mineiro,Brazil,5
+FOLIG,Folies gourmandes,France,5
+GALED,Galer�a del gastr�nomo,Spain,5
+HUNGC,Hungry Coyote Import Store,USA,5
+MORGK,Morgenstern Gesundkost,Germany,5
+OCEAN,Oc�ano Atl�ntico Ltda.,Argentina,5
+PRINI,Princesa Isabel Vinhos,Portugal,5
+RANCH,Rancho grande,Argentina,5
+ROMEY,Romero y tomillo,Spain,5
+VINET,Vins et alcools Chevalier,France,5
+ANATR,Ana Trujillo Emparedados y helados,Mexico,4
+DUMON,Du monde entier,France,4
+LACOR,La corne d'abondance,France,4
+LETSS,Let's Stop N Shop,USA,4
+SPECD,Sp�cialit�s du monde,France,4
+THEBI,The Big Cheese,USA,4
+BOLID,B�lido Comidas preparadas,Spain,3
+CONSH,Consolidated Holdings,UK,3
+FRANR,France restauration,France,3
+LAUGB,Laughing Bacchus Wine Cellars,Canada,3
+NORTS,North/South,UK,3
+THECR,The Cracker Box,USA,3
+TRAIH,Trail's Head Gourmet Provisioners,USA,3
+GROSR,GROSELLA-Restaurante,Venezuela,2
+LAZYK,Lazy K Kountry Store,USA,2
+CENTC,Centro comercial Moctezuma,Mexico,1

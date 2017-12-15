@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast_produce_sales_segment1.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sub_Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment1.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast_produce_sales_segment2.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sub_Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment2.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast_produce_sales_segment3.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sub_Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_high_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_80" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="forecast_low_95" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales_segment3.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cluster_assignment.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Address" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Zip" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Sum_Dry_Grocery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Dairy" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Frozen_Food" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Meat" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Produce" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Floral" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Deli" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_Bakery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sum_General_Merchandise" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total.Sales" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Cluster" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="426" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\new_store_assignment.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new_store_assignment.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\new_store_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="cluster_assignment" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\new_store_assignment.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="150" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Cluster" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="cluster_assignment" action="GroupBy" rename="cluster_assignment" />
+            <SummarizeField field="cluster_assignment" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="222" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="Cluster" selected="True" />
+            <Field field="Count" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>p7_workflow4</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
