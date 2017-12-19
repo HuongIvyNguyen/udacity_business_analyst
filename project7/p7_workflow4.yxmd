@@ -122,10 +122,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Address" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="City" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="State" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Zip" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
             <Field name="Sum_Dry_Grocery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_Dairy" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_Frozen_Food" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
@@ -135,7 +131,16 @@ Table=`Sheet1$`</DefaultAnnotationText>
             <Field name="Sum_Deli" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_Bakery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_General_Merchandise" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
-            <Field name="Total.Sales" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Total.Sales" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Dry_Grocery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Dairy" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Frozen_Food" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Meat" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Produce" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Floral" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Deli" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Bakery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_General_Merchandise" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Cluster" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
@@ -216,15 +221,15 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <Configuration>
           <JoinByRecPos value="False" />
           <JoinFields>
+            <JoinInfo connection="#3">
+              <Field field="Period" />
+              <Field field="Sub_Period" />
+            </JoinInfo>
             <JoinInfo connection="#1">
               <Field field="Period" />
               <Field field="Sub_Period" />
             </JoinInfo>
             <JoinInfo connection="#2">
-              <Field field="Period" />
-              <Field field="Sub_Period" />
-            </JoinInfo>
-            <JoinInfo connection="#3">
               <Field field="Period" />
               <Field field="Sub_Period" />
             </JoinInfo>
@@ -236,6 +241,13 @@ Table=`Sheet1$`</DefaultAnnotationText>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="Input_#3_Period" selected="False" rename="Input_#3_Period" />
+                <SelectField field="Input_#3_Sub_Period" selected="False" rename="Input_#3_Sub_Period" />
+                <SelectField field="Input_#3_forecast" selected="True" rename="forecast3" description="forecast3" />
+                <SelectField field="Input_#3_forecast_high_95" selected="False" rename="Input_#3_forecast_high_95" />
+                <SelectField field="Input_#3_forecast_high_80" selected="False" rename="Input_#3_forecast_high_80" />
+                <SelectField field="Input_#3_forecast_low_80" selected="False" rename="Input_#3_forecast_low_80" />
+                <SelectField field="Input_#3_forecast_low_95" selected="False" rename="Input_#3_forecast_low_95" />
                 <SelectField field="Input_#1_Period" selected="True" rename="Year" />
                 <SelectField field="Input_#1_Sub_Period" selected="True" rename="Month" />
                 <SelectField field="Input_#1_forecast" selected="True" rename="forecast1" description="forecast1" />
@@ -246,13 +258,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
                 <SelectField field="Input_#2_forecast_high_80" selected="False" rename="Input_#2_forecast_high_80" />
                 <SelectField field="Input_#2_forecast_low_80" selected="False" rename="Input_#2_forecast_low_80" />
                 <SelectField field="Input_#2_forecast_low_95" selected="False" rename="Input_#2_forecast_low_95" />
-                <SelectField field="Input_#3_Period" selected="False" rename="Input_#3_Period" />
-                <SelectField field="Input_#3_Sub_Period" selected="False" rename="Input_#3_Sub_Period" />
-                <SelectField field="Input_#3_forecast" selected="True" rename="forecast3" description="forecast3" />
-                <SelectField field="Input_#3_forecast_high_95" selected="False" rename="Input_#3_forecast_high_95" />
-                <SelectField field="Input_#3_forecast_high_80" selected="False" rename="Input_#3_forecast_high_80" />
-                <SelectField field="Input_#3_forecast_low_80" selected="False" rename="Input_#3_forecast_low_80" />
-                <SelectField field="Input_#3_forecast_low_95" selected="False" rename="Input_#3_forecast_low_95" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -273,15 +278,16 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="[forecast1]*2+[forecast2]*5+[forecast3]*3" field="Sale" size="8" type="Double" />
+            <FormulaField expression="(3*[forecast1]/23+6*[forecast2]/29+[forecast3]/33)" field="Sale" size="8" type="Double" />
             <FormulaField expression="&quot;New&quot;" field="Store Type" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;Forecast&quot;" field="Data" size="1073741823" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[Sale = [forecast1]*2+[forecast2]*5+[forecast3]*3
+          <DefaultAnnotationText>Sale = (3*[forecast1]/23+6*[forecast2]/29+[forecast3]/33)
 Store Type = "New"
-]]></DefaultAnnotationText>
+Dat...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -306,9 +312,6 @@ Store Type = "New"
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Period" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\forecast_produce_sales.xlsx|||`Sheet1$`" type="Double" />
@@ -358,11 +361,13 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <Configuration>
           <FormulaFields>
             <FormulaField expression="&quot;Existing&quot;" field="Store Type" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;Forecast&quot;" field="Data" size="1073741823" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText><![CDATA[Store Type = "Existing"
+Data = "Forecast"
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -393,9 +398,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="254" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\storesalesdata.csv" type="V_String" />
@@ -472,8 +474,9 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <SelectFields>
             <SelectField field="Year" selected="True" />
             <SelectField field="Month" selected="True" />
-            <SelectField field="Sale" selected="True" />
+            <SelectField field="Sale" selected="True" type="Float" size="4" />
             <SelectField field="Store Type" selected="True" />
+            <SelectField field="Data" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -512,11 +515,13 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <Configuration>
           <FormulaFields>
             <FormulaField expression="&quot;Existing&quot;" field="Store Type" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;Historical&quot;" field="Data" size="1073741823" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText><![CDATA[Store Type = "Existing"
+Data = "Historical"
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -579,9 +584,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>

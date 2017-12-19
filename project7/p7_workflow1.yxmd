@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="78" />
+        <Position x="54" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -25,9 +25,6 @@
           <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="254" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\storesalesdata.csv" type="V_String" />
@@ -50,7 +47,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="198" />
+        <Position x="54" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,9 +69,6 @@
           <DefaultAnnotationText>storeinformation.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="254" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\storeinformation.csv" type="V_String" />
@@ -90,7 +84,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="150" y="198" />
+        <Position x="126" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -113,7 +107,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="222" y="114" />
+        <Position x="198" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -144,7 +138,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="114" />
+        <Position x="270" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -167,16 +161,12 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="474" y="90" />
+        <Position x="450" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
             <SummarizeField field="Store" action="GroupBy" rename="Store" />
-            <SummarizeField field="Address" action="GroupBy" rename="Address" />
-            <SummarizeField field="City" action="GroupBy" rename="City" />
-            <SummarizeField field="State" action="GroupBy" rename="State" />
-            <SummarizeField field="Zip" action="GroupBy" rename="Zip" />
             <SummarizeField field="Dry_Grocery" action="Sum" rename="Sum_Dry_Grocery" />
             <SummarizeField field="Dairy" action="Sum" rename="Sum_Dairy" />
             <SummarizeField field="Frozen_Food" action="Sum" rename="Sum_Frozen_Food" />
@@ -198,7 +188,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="390" y="102" />
+        <Position x="366" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -218,11 +208,11 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings>
-        <Position x="702" y="90" />
+        <Position x="678" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="the fields">Sum_Dry_Grocery + Sum_Dairy + Sum_Frozen_Food + Sum_Meat + Sum_Produce + Sum_Floral + Sum_Deli + Sum_Bakery + Sum_General_Merchandise</Value>
+          <Value name="the fields">Percent_Dry_Grocery + Percent_Dairy + Percent_Frozen_Food + Percent_Meat + Percent_Produce + Percent_Floral + Percent_Deli + Percent_Bakery + Percent_General_Merchandise</Value>
           <Value name="standardize">True</Value>
           <Value name="z score">True</Value>
           <Value name="unit interval">False</Value>
@@ -230,9 +220,9 @@
           <Value name="k-medians">False</Value>
           <Value name="neural gas">False</Value>
           <Value name="min clus">2</Value>
-          <Value name="max clus">10</Value>
+          <Value name="max clus">6</Value>
           <Value name="bootstrap rep">50</Value>
-          <Value name="num seeds">3</Value>
+          <Value name="num seeds">10</Value>
           <Value name="inches">True</Value>
           <Value name="in.w">5.50</Value>
           <Value name="in.h">5.50</Value>
@@ -255,11 +245,11 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="774" y="42" />
+        <Position x="750" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6796_15367dd4317f45caa1cb19567b854018_\Engine_4112_39a01547c09e4448ad7506d6be78d430_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6088_48d78eb0e0f94f7e952a64f39206a7fd_\Engine_5232_233d3c2adbd94c728fd18d7736ec2441_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -283,12 +273,12 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings>
-        <Position x="618" y="222" />
+        <Position x="594" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Value name="model name">K_Means_Sales</Value>
-          <Value name="the fields">Sum_Dry_Grocery + Sum_Dairy + Sum_Frozen_Food + Sum_Meat + Sum_Produce + Sum_Floral + Sum_Deli + Sum_Bakery + Sum_General_Merchandise</Value>
+          <Value name="the fields">Percent_Dry_Grocery + Percent_Dairy + Percent_Frozen_Food + Percent_Meat + Percent_Produce + Percent_Floral + Percent_Deli + Percent_Bakery + Percent_General_Merchandise</Value>
           <Value name="standardize">True</Value>
           <Value name="z score">True</Value>
           <Value name="unit interval">False</Value>
@@ -296,7 +286,7 @@
           <Value name="k-medians">False</Value>
           <Value name="neural gas">False</Value>
           <Value name="num clus">3</Value>
-          <Value name="num seeds">3</Value>
+          <Value name="num seeds">10</Value>
           <Value name="plot points">True</Value>
           <Value name="plot centroids">False</Value>
           <Value name="max comp">2</Value>
@@ -335,11 +325,11 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="714" y="234" />
+        <Position x="690" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6796_15367dd4317f45caa1cb19567b854018_\Engine_4112_2cacede318f84382b2c1e7c224056b1c_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6088_48d78eb0e0f94f7e952a64f39206a7fd_\Engine_5232_48bda2b9b0634bfe9d908aa8af903660_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -363,7 +353,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings>
-        <Position x="702" y="162" />
+        <Position x="678" y="174" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -374,16 +364,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="Address" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="City" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="Zip" size="1073741823" source="R-DATA:" type="V_WString" />
             <Field name="Sum_Dry_Grocery" source="R-DATA:" type="Double" />
             <Field name="Sum_Dairy" source="R-DATA:" type="Double" />
             <Field name="Sum_Frozen_Food" source="R-DATA:" type="Double" />
@@ -393,7 +376,16 @@
             <Field name="Sum_Deli" source="R-DATA:" type="Double" />
             <Field name="Sum_Bakery" source="R-DATA:" type="Double" />
             <Field name="Sum_General_Merchandise" source="R-DATA:" type="Double" />
-            <Field name="Total.Sales" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Total.Sales" source="R-DATA:" type="Double" />
+            <Field name="Percent_Dry_Grocery" source="R-DATA:" type="Double" />
+            <Field name="Percent_Dairy" source="R-DATA:" type="Double" />
+            <Field name="Percent_Frozen_Food" source="R-DATA:" type="Double" />
+            <Field name="Percent_Meat" source="R-DATA:" type="Double" />
+            <Field name="Percent_Produce" source="R-DATA:" type="Double" />
+            <Field name="Percent_Floral" source="R-DATA:" type="Double" />
+            <Field name="Percent_Deli" source="R-DATA:" type="Double" />
+            <Field name="Percent_Bakery" source="R-DATA:" type="Double" />
+            <Field name="Percent_General_Merchandise" source="R-DATA:" type="Double" />
             <Field name="Cluster" source="R-DATA:" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -402,11 +394,11 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="786" y="186" />
+        <Position x="762" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6796_15367dd4317f45caa1cb19567b854018_\Engine_4112_84856c12c4e54392b3b67e1d09e75f12_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6088_48d78eb0e0f94f7e952a64f39206a7fd_\Engine_5232_8203c5a7ee324a12afb34ecfd73efaa2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -430,7 +422,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="786" y="138" />
+        <Position x="762" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -447,20 +439,26 @@
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="558" y="90" />
+        <Position x="534" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="[Sum_Dry_Grocery]+[Sum_Dairy]+[Sum_Frozen_Food]+[Sum_Meat]+[Sum_Produce]+[Sum_Floral]+[Sum_Deli]+[Sum_Bakery]+[Sum_General_Merchandise]" field="Total Sales" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Sum_Dry_Grocery]+[Sum_Dairy]+[Sum_Frozen_Food]+[Sum_Meat]+[Sum_Produce]+[Sum_Floral]+[Sum_Deli]+[Sum_Bakery]+[Sum_General_Merchandise]" field="Total Sales" size="8" type="Double" />
+            <FormulaField expression="[Sum_Dry_Grocery]/[Total Sales]" field="Percent_Dry_Grocery" size="8" type="Double" />
+            <FormulaField expression="[Sum_Dairy]/[Total Sales]" field="Percent_Dairy" size="8" type="Double" />
+            <FormulaField expression="[Sum_Frozen_Food]/[Total Sales]" field="Percent_Frozen_Food" size="8" type="Double" />
+            <FormulaField expression="[Sum_Meat]/[Total Sales]" field="Percent_Meat" size="8" type="Double" />
+            <FormulaField expression="[Sum_Produce]/[Total Sales]" field="Percent_Produce" size="8" type="Double" />
+            <FormulaField expression="[Sum_Floral]/[Total Sales]" field="Percent_Floral" size="8" type="Double" />
+            <FormulaField expression="[Sum_Deli]/[Total Sales]" field="Percent_Deli" size="8" type="Double" />
+            <FormulaField expression="[Sum_Bakery]/[Total Sales]" field="Percent_Bakery" size="8" type="Double" />
+            <FormulaField expression="[Sum_General_Merchandise]/[Total Sales]" field="Percent_General_Merchandise" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">

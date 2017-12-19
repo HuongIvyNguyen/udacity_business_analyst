@@ -112,7 +112,16 @@ Table=`Sheet1$`</DefaultAnnotationText>
             <Field name="Sum_Deli" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_Bakery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Sum_General_Merchandise" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
-            <Field name="Total.Sales" size="255" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Total.Sales" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Dry_Grocery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Dairy" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Frozen_Food" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Meat" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Produce" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Floral" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Deli" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_Bakery" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Percent_General_Merchandise" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
             <Field name="Cluster" source="File: C:\Users\Ivester\Desktop\udacity_business_analyst_nanodegree\project7\cluster_assignment.xlsx|||`Sheet1$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
@@ -223,9 +232,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
     </Node>
@@ -237,7 +243,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <Configuration>
           <Value name="Model Name">FM_Segment</Value>
           <Value name="Y Var">Cluster</Value>
-          <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopWhite + HVal0to100K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + PopDens</Value>
+          <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
           <Value name="Num Trees">500</Value>
           <Value name="Custom Num Vars">False</Value>
           <Value name="Num Vars">3</Value>
@@ -275,9 +281,9 @@ Table=`Sheet1$`</DefaultAnnotationText>
         <Configuration>
           <Value name="model.name">BM_Segment</Value>
           <Value name="select.target">Cluster</Value>
-          <Value name="select.predictors">Store=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=False,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=False,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=False,PopWhite=True,HVal0to100K=True,HVal100Kto200K=False,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=False,PopDens=True,Address=False,City=False,State=False,Zip=False,Sum_Dry_Grocery=False,Sum_Dairy=False,Sum_Frozen_Food=False,Sum_Meat=False,Sum_Produce=False,Sum_Floral=False,Sum_Deli=False,Sum_Bakery=False,Sum_General_Merchandise=False,Total.Sales=False,Cluster=False</Value>
+          <Value name="select.predictors">Store=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True,Cluster=False</Value>
           <Value name="use.weights">False</Value>
-          <Value name="select.weights">Sum_Dry_Grocery</Value>
+          <Value name="select.weights">Age0to9</Value>
           <Value name="marginal.plots">False</Value>
           <Value name="plot.min.importance">2.5</Value>
           <Value name="type.distribution">False</Value>
@@ -329,7 +335,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_929d317e2c614234b96bfc013a1aa5ac_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_a8ffe009065e4e0c971b22d793c76220_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -345,7 +351,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_ee46d0e90f6f4589860330870a124859_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_782fdcc620284f5ca98f98729a24777e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -373,7 +379,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_60c6885ac77c42c9a86d4e392355ab5b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_325a731faa1847ab83731f489098cefd_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -401,7 +407,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_cf02c05cab3c403bb47cc36e39e48254_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_c90a46b3bb084d37990244dcc34c1f87_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -417,7 +423,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_2efdcb644c8e46059c8122f44db841c9_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_32e3f3b8461a41c3a2628307172e38e3_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -433,7 +439,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_4ff10525677e4f10bfe1557d0d710d17_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_a9e95d1fa4f5418e9d1795573bc3f443_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -449,7 +455,19 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_633da7aa8c0a4e66995b1ca35b41bddd_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_5782da521ca841b3856f7199d946dd0b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -638,7 +656,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_887df9d8528a4d0ca300f69c955e4220_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_04b38997f6324c4a93cd25ce6f14dc27_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -666,7 +684,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_48997f28adbd45abb36a34d4d31176ad_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_bc0fcbb550384468b6d62c67a1636d1a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -694,7 +712,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_14aba8c4edcd4edc8832b5697a0c6481_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_0ee949e999a04e7184c23f8ebbdf8289_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -722,7 +740,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_4ca3d0c46667422490bacf6b786117b9_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_aba24997c99e4bc8b6afd172fefeba2c_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -745,7 +763,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_5b62da306fa44fa89031e73579932f2c_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_911a6e75d97e4404af47e8671c824c21_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -761,7 +779,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_a4a63c6107524d52a55c44329fa0e972_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_8f5978cfd41e4c9bb534c79510c1f0d0_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -784,7 +802,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_6e28bda193a7445baee82ca921acbf9b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_aa13a63806ee49c59f253ffc54ec2d2e_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -800,7 +818,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_e341d811c62e4450a3af6c44b97fca8c_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_56d1fcdff3cc45ffb6a61a7c6c1a5f39_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -823,7 +841,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_1ea5072096e749a6be6d707cb632a2f9_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_087db7cabb9e4cc69259380fcb7cde7f_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -846,7 +864,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_37c94f1e38414048a425bc219e490f0b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_609381e6bada4a07b4f8d55a94ad50c2_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -862,7 +880,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_75d34bc151ae4ab8a6ab5bc17bfcaf23_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_621228629f9b4b8688be8ab47445df6f_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -878,7 +896,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_696b1a60472a4f6d8224a67df0c8a6cb_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_2051fba98b7e4c93891cf611de2a7211_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -904,6 +922,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
+            <SelectField field="Store" selected="True" />
             <SelectField field="Age0to9" selected="True" type="Double" size="8" />
             <SelectField field="Age10to17" selected="True" type="Double" size="8" />
             <SelectField field="Age18to24" selected="True" type="Double" size="8" />
@@ -949,7 +968,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
             <SelectField field="HVal750KPlus" selected="True" type="Double" size="8" />
             <SelectField field="PopDens" selected="True" type="Double" size="8" />
             <SelectField field="Cluster" selected="True" type="V_String" size="19" />
-            <SelectField field="*Unknown" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -959,58 +978,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="36">
-      <GuiSettings>
-        <Position x="306" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Select Fields">Store=True,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True,Address=True,City=True,State=True,Zip=True,Sum_Dry_Grocery=True,Sum_Dairy=True,Sum_Frozen_Food=True,Sum_Meat=True,Sum_Produce=True,Sum_Floral=True,Sum_Deli=True,Sum_Bakery=True,Sum_General_Merchandise=True,Total.Sales=True,Cluster=True</Value>
-          <Value name="Sample Data">False</Value>
-          <Value name="Number">True</Value>
-          <Value name="NNumber">5000</Value>
-          <Value name="Percent">False</Value>
-          <Value name="NPercent">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
-    </Node>
-    <Node ToolID="37">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="378" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_fd0fa21a06d44a33a01d096619f914c3_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="38">
       <GuiSettings>
@@ -1033,9 +1000,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -1097,7 +1061,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_6892_f9fd6f8407f4459db25c3bd64d19fff2_\Engine_7840_d71db1eb20504f14a460c61b9dd84d1b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ivester\AppData\Local\Temp\Engine_3096_988aa0b0fb7f4576b87b43594b2eacc6_\Engine_5232_8073dba0d4bd4068a4aca1e997167a3c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1223,9 +1187,6 @@ Table=`Sheet1$`</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -1395,20 +1356,20 @@ Table=Sheet1</DefaultAnnotationText>
       <Destination ToolID="12" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="6" Connection="Output" />
-      <Destination ToolID="38" Connection="Right Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="40" Connection="Output" />
-      <Destination ToolID="38" Connection="Left Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="7" Connection="Output" />
       <Destination ToolID="13" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Report" />
       <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="38" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="38" Connection="Left Input" />
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="error_measures" />
@@ -1461,14 +1422,6 @@ Table=Sheet1</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="35" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="35" Connection="Output" />
-      <Destination ToolID="36" Connection="Field Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="36" Connection="Interactive" />
-      <Destination ToolID="37" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="38" Connection="Output" />
